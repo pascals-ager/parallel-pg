@@ -63,8 +63,7 @@ docker pull postgres
 mkdir -p $HOME/docker/volumes/postgres
 docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 127.0.0.1:5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
 
-## Now we have a postgres docker runnin with a dummy password docker. Note that this password goes into /configuration/config.py
-
+configuration.py
 # Go to root of the repository:
 python load.py seed --dst_table track_events_json
 python load.py seed --dst_table weather_json
@@ -75,7 +74,12 @@ python load.py load --src_file ~/weather.json --dst_table weather_json --chunk 5
 # logs can be found at /logs/tierloader.log
 
 ```
+## Integration Test:
+A simple integration test is provided
+```buildoutcfg
+python IntegrationTest.py
 
+```
 Caveats:
 1. Inorder to gain a little bit of performance, a configurable batched bulk insert is used. If the file contains 15 records and the chunk specified is 10,
 then two chunks are written with 10 records each. On the first write, 10 records are written, on the seconds write the remaining 5 records are written with
@@ -83,3 +87,4 @@ an additional 5 None records. (which can be filtered with data is not null where
 2. I decided this is a better approach than checking len(file) and reading exactly the number of lines as remaining because len()/size() operations are eager
 and will traverse the who file just to get the len, which is not scalable for extremely large files. Whereas, filtering by not null is a one time cleaning-up act
 on the database server. 
+

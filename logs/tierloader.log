@@ -29,3 +29,246 @@ INFO:root:Finished parallel persist on thread
 INFO:root:Finished parallel persist on thread
 INFO:root:Data load success into table track_events_json
 INFO:root:'load'  27337.84 ms
+INFO:root:Received seed command with {'dst_table': 'track_events_json'}
+INFO:root:Seeded table track_events_json in the database
+INFO:root:'load'  10.46 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Data load success into table track_events_json
+INFO:root:'load'  95556.90 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '40000'}
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Data load success into table track_events_json
+INFO:root:'load'  93472.85 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Data load success into table track_events_json
+INFO:root:'load'  97496.17 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Data load success into table track_events_json
+INFO:root:'load'  98763.50 ms

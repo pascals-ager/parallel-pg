@@ -3,7 +3,7 @@ import logging
 import time
 from persistence.postgresImpl import PostgresImpl
 from persistence.persist import DataAccessLayer
-from configuration.config import PostgresConfig
+from configuration import PostgresConfig
 from api.yielder import LineYldr
 
 
@@ -29,13 +29,13 @@ def load(args):
         params = {'src_file': args.src_file, 'dst_table': args.dst_table, 'chunk': args.chunk}
         log.info("Received {} command with {}".format(args.command, params.__str__()))
         generator = LineYldr().yield_line(params.get('src_file'))
-        DataAccessLayer(PostgresImpl, PostgresConfig).persist(params.get('dst_table'), generator, int(params.get('chunk')))
+        DataAccessLayer(PostgresImpl, PostgresConfig()).persist(params.get('dst_table'), generator, int(params.get('chunk')))
         log.info("Data load success into table {}".format(params.get('dst_table')))
 
     if args.command == "seed":
         params = {'dst_table': args.dst_table}
         log.info("Received {} command with {}".format(args.command, params.__str__()))
-        DataAccessLayer(PostgresImpl, PostgresConfig).seed(params.get('dst_table'))
+        DataAccessLayer(PostgresImpl, PostgresConfig()).seed(params.get('dst_table'))
         log.info("Seeded table {} in the database".format(params.get('dst_table')))
 
 

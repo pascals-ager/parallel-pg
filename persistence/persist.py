@@ -1,7 +1,7 @@
 class DataAccessLayer:
 
-    def __init__(self, service, config):
-        self.service = service(config)
+    def __init__(self, service_impl, config):
+        self.service = service_impl(config)
 
     def persist(self, dst_table, chunk, generator):
         insert_statement = "INSERT INTO {}(data) values (%s)".format(dst_table)
