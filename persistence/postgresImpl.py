@@ -39,7 +39,6 @@ class PostgresImpl:
             if connection:
                 connection.close()
 
-
     def execute_batch(self, statement, generator, chunk):
         """
         :param statement: SQL Insert statement to execute
