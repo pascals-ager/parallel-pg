@@ -18,6 +18,11 @@ class PostgresImpl:
         return psycopg2.connect(dbname=self.db_name, user=self.user, password=self.password, host=self.host, port=self.port)
 
     def parallel_insert(self, statement, json_list):
+        """
+        :param statement: SQL Insert statement to execute
+        :param json_list: List of json that is persisted by the thread
+        :return: None
+        """
         connection = None
         try:
             connection = self.connect()
