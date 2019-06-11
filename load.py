@@ -29,7 +29,7 @@ def load(args):
         params = {'src_file': args.src_file, 'dst_table': args.dst_table, 'chunk': args.chunk}
         log.info("Received {} command with {}".format(args.command, params.__str__()))
         generator = LineYldr().yield_line(params.get('src_file'))
-        DataAccessLayer(PostgresImpl, PostgresConfig).persist(params.get('dst_table'), int(params.get('chunk')), generator)
+        DataAccessLayer(PostgresImpl, PostgresConfig).persist(params.get('dst_table'), generator, int(params.get('chunk')))
         log.info("Data load success into table {}".format(params.get('dst_table')))
 
     if args.command == "seed":

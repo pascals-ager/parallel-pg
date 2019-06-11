@@ -1,7 +1,7 @@
 import psycopg2
 import psycopg2.extras
 import logging
-from multiprocessing import pool
+from concurrent.futures import ThreadPoolExecutor
 
 
 class PostgresImpl:
@@ -17,6 +17,23 @@ class PostgresImpl:
     def connect(self):
         return psycopg2.connect(dbname=self.db_name, user=self.user, password=self.password, host=self.host, port=self.port)
 
+    def parallel_insert(self, statement, json_list):
+        connection = None
+        try:
+            connection = self.connect()
+            cursor = connection.cursor()
+            # SqlAlchemy batch mode uses execute_batch, hence using execute_batch to do bulk insert for chunk
+            psycopg2.extras.execute_batch(cursor, statement, json_list)
+            connection.commit()
+            cursor.close()
+            print("returning")
+        except psycopg2.DatabaseError as error:
+            self.logger.error(error)
+            raise error
+        finally:
+            if connection:
+                connection.close()
+
     def execute_batch(self, statement, generator, chunk):
         """
         :param statement: SQL Insert statement to execute
@@ -24,23 +41,12 @@ class PostgresImpl:
         :param chunk: chunk of records that have to be extracted from the generator
         :return: None
         """
-        connection = None
-        try:
-            connection = self.connect()
-            cursor = connection.cursor()
-            json_list = [next(generator, (None,)) for line in range(chunk)]
+        json_list = [next(generator, (None,)) for line in range(chunk)]
+        with ThreadPoolExecutor(max_workers=8) as executor:
             while json_list[0] != (None,):
-                # SqlAlchemy batch mode uses execute_batch, hence using execute_batch to do bulk insert for chunk
-                psycopg2.extras.execute_batch(cursor, statement, json_list)
-                connection.commit()
+                executor.submit(self.parallel_insert, (statement, json_list))
+                print("here")
                 json_list = [next(generator, (None,)) for line in range(chunk)]
-            cursor.close()
-        except psycopg2.DatabaseError as error:
-            self.logger.error(error)
-            raise error
-        finally:
-            if connection:
-                connection.close()
 
     def execute_ddl(self, statement):
         """
