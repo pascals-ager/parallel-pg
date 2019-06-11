@@ -1,7 +1,7 @@
 import psycopg2
 import psycopg2.extras
 import logging
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor as PoolExecutor
 
 
 class PostgresImpl:
@@ -31,13 +31,14 @@ class PostgresImpl:
             psycopg2.extras.execute_batch(cursor, statement, json_list)
             connection.commit()
             cursor.close()
-            print("returning")
+            self.logger.info("Finished parallel persist on thread".format())
         except psycopg2.DatabaseError as error:
             self.logger.error(error)
             raise error
         finally:
             if connection:
                 connection.close()
+
 
     def execute_batch(self, statement, generator, chunk):
         """
@@ -47,10 +48,10 @@ class PostgresImpl:
         :return: None
         """
         json_list = [next(generator, (None,)) for line in range(chunk)]
-        with ThreadPoolExecutor(max_workers=8) as executor:
+        with PoolExecutor(max_workers=8) as executor:
             while json_list[0] != (None,):
-                print("submitting")
-                executor.submit(self.parallel_insert(statement, json_list))
+                self.logger.info("Submitting parallel task to persist into the database with {}".format(statement))
+                executor.submit(self.parallel_insert, statement, json_list)
                 json_list = [next(generator, (None,)) for line in range(chunk)]
 
     def execute_ddl(self, statement):

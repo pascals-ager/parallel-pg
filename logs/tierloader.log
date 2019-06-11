@@ -1,116 +1,31 @@
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
-INFO:root:'load'  171031.27 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '20000'}
-INFO:root:'load'  167933.82 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:'load'  175923.87 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '100000'}
-INFO:root:'load'  176537.98 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '1000'}
-INFO:root:'load'  180021.00 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  40.97 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  17.93 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '40000'}
+INFO:root:Received load command with {'src_file': 'track_events.json', 'dst_table': 'track_events_json', 'chunk': '50000'}
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Submitting parallel task to persist into the database with INSERT INTO track_events_json(data) values (%s)
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
+INFO:root:Finished parallel persist on thread
 INFO:root:Data load success into table track_events_json
-INFO:root:'load'  171924.07 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  18.90 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '200000'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  179116.82 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  17.68 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '500'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  189097.02 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  17.07 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '1'}
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  17.21 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-ERROR:root:INSERT has more expressions than target columns
-LINE 1: ...00", "segment_tracks.properties_rating": null}'),('{"segment...
-                                                             ^
-
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-ERROR:root:INSERT has more expressions than target columns
-LINE 1: ...00", "segment_tracks.properties_rating": null}'),('{"segment...
-                                                             ^
-
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  144680.80 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  16.22 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Received seed command with {'dst_table': 'weather_events_json'}
-INFO:root:Seeded table weather_events_json in the database
-INFO:root:'load'  11.69 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_json', 'chunk': '5000'}
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_json', 'chunk': '5000'}
-INFO:root:Data load success into table weather_json
-INFO:root:'load'  1311.03 ms
-INFO:root:Received seed command with {'dst_table': 'weather_events_json'}
-INFO:root:Seeded table weather_events_json in the database
-INFO:root:'load'  14.87 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_json', 'chunk': '5000'}
-ERROR:root:relation "weather_json" does not exist
-LINE 1: INSERT INTO weather_json(data) values ('{"weather_data.date_...
-                    ^
-
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '5000'}
-INFO:root:Data load success into table weather_events_json
-INFO:root:'load'  3756.94 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  15.41 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  171860.48 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  15.40 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  173023.31 ms
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  18.98 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  17.77 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Received seed command with {'dst_table': 'track_events_json'}
-INFO:root:Seeded table track_events_json in the database
-INFO:root:'load'  15.69 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
-INFO:root:Data load success into table track_events_json
-INFO:root:'load'  57590.96 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_json', 'chunk': '1000'}
-INFO:root:Data load success into table weather_json
-INFO:root:'load'  1249.48 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
-INFO:root:Data load success into table weather_events_json
-INFO:root:'load'  1322.86 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
-INFO:root:Data load success into table weather_events_json
-INFO:root:'load'  1266.85 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
-INFO:root:Data load success into table weather_events_json
-INFO:root:'load'  3797.69 ms
-INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
-INFO:root:Data load success into table weather_events_json
-INFO:root:'load'  4008.67 ms
+INFO:root:'load'  27337.84 ms

@@ -57,6 +57,7 @@ optional arguments:
 
 ###How to run:
 ```buildoutcfg
+sudo apt-get install libpq-dev
 sudo apt-get install postgresql-client
 docker pull postgres
 mkdir -p $HOME/docker/volumes/postgres
