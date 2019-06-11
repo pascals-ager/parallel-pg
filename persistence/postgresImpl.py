@@ -49,8 +49,8 @@ class PostgresImpl:
         json_list = [next(generator, (None,)) for line in range(chunk)]
         with ThreadPoolExecutor(max_workers=8) as executor:
             while json_list[0] != (None,):
-                executor.submit(self.parallel_insert, (statement, json_list))
-                print("here")
+                print("submitting")
+                executor.submit(self.parallel_insert(statement, json_list))
                 json_list = [next(generator, (None,)) for line in range(chunk)]
 
     def execute_ddl(self, statement):

@@ -99,3 +99,18 @@ INFO:root:'load'  15.69 ms
 INFO:root:Received load command with {'src_file': '/home/scala/tier/track_events.json', 'dst_table': 'track_events_json', 'chunk': '10000'}
 INFO:root:Data load success into table track_events_json
 INFO:root:'load'  57590.96 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_json', 'chunk': '1000'}
+INFO:root:Data load success into table weather_json
+INFO:root:'load'  1249.48 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
+INFO:root:Data load success into table weather_events_json
+INFO:root:'load'  1322.86 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
+INFO:root:Data load success into table weather_events_json
+INFO:root:'load'  1266.85 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
+INFO:root:Data load success into table weather_events_json
+INFO:root:'load'  3797.69 ms
+INFO:root:Received load command with {'src_file': '/home/scala/tier/weather.json', 'dst_table': 'weather_events_json', 'chunk': '1000'}
+INFO:root:Data load success into table weather_events_json
+INFO:root:'load'  4008.67 ms
