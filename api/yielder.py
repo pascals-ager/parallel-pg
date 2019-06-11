@@ -1,7 +1,11 @@
 import json
+import logging
 
 
 class LineYldr:
+
+    def __init__(self):
+        self.logger = logging.getLogger()
 
     @staticmethod
     def format_prefix(line, prefix):
@@ -30,8 +34,20 @@ class LineYldr:
         :param src_file: src file to read
         :yield: tuple formatted line
         """
-        with open(src_file, 'r') as f:
-            for i in f:
-                yield (
-                    json.dumps(json.loads(self.format_suffix(self.format_prefix(i.strip('\n'), '['), ']').strip(',')))
-                    ,)
+        with open(src_file, 'r') as file:
+            for line in file:
+                try:
+                    json_dict = json.loads(self.format_suffix(self.format_prefix(line.strip('\n'), '['), ']').strip(','))
+                    """
+                    if the schema of the json is exchanged before hand, the schema validation logic can go here.
+                    """
+                    json_str = json.dumps(json_dict)
+                    yield (json_str,)
+                except json.JSONDecodeError as e:
+                    self.logger.error("Json Decode error {}".format(e))
+                    raise e
+                except Exception as e:
+                    self.logger.error("Exception occurred".format(e))
+                    raise e
+
+
