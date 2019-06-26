@@ -1,7 +1,7 @@
-Challenge Task 1:
+T1
 ----------------
 
-A load utility is provided to load the data into postgres. It expects basic configuration to be present in "configuration.py/PostgresConfig" object.
+A parallel load utility to load json flatfiles into postgres. It expects basic configuration to be present in "configuration.py/PostgresConfig" object.
 
 Assumptions made:
 1. The schema of the data is not known. Hence we cannot flatten the json and insert into pre-defined columns inorder to take advantage of columnar storage.
