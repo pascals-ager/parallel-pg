@@ -3,12 +3,12 @@ T1
 
 A parallel load utility to load json flatfiles into postgres. It expects basic configuration to be present in "configuration.py/PostgresConfig" object.
 
-Assumptions made:
+ Overview :
 1. The schema of the data is not known. Hence we cannot flatten the json and insert into pre-defined columns inorder to take advantage of columnar storage.
-2. It is observed that track_events.json is an incorrect json array, i.e it had a prefix '[', but not the corresponding suffix ']', Hence it is assumed that the files need not be formatted.
-3. One assumption is that the individual jsons are seperated by a ',\n'
-4. The solution has to be generic enough to work for 1000's of flat json files. (Thereby ruling out COPY/LOAD utilities)
-5. The solution should provide command line arguments to configure source files and destination tables.
+2. Some files may have json arrays and some may have json objects. Plus, formatting errors may exist.eg: prefix '[' may exist but may be missing the corresponding suffix ']', Hence it is assumed that the reader must standardize overn common formatting errors
+3. Individual jsons are seperated by a ',\n'
+4. The solution is generic enough to work for 10000's of flat json files. (Thereby ruling out COPY/LOAD utilities)
+5. The solution provides command line arguments to configure source files and destination tables.
 6. The files can be arbitrarily large/small, hence the solution must provide a way to configure batch size of inserts because inserting per line is expensive on the cores whereas extremely large batches may not fit in memory.  
 
 ###Basic usage help
