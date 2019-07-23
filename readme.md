@@ -1,14 +1,11 @@
-T1
-----------------
-
 A parallel load utility to load json flatfiles into postgres. It expects basic configuration to be present in "configuration.py/PostgresConfig" object.
 
  Overview :
-1. The schema of the data is not known. Hence we cannot flatten the json and insert into pre-defined columns inorder to take advantage of columnar storage.
+1. The schema of the data is not known.
 2. Some files may have json arrays and some may have json objects. Plus, formatting errors may exist.eg: prefix '[' may exist but may be missing the corresponding suffix ']', Hence it is assumed that the reader must standardize overn common formatting errors
 3. Individual jsons are seperated by a ',\n'
-4. The solution is generic enough to work for 10000's of flat json files. (Thereby ruling out COPY/LOAD utilities)
-5. The solution provides command line arguments to configure source files and destination tables.
+4. Generic enough to work for 10000's of flat json files. (Thereby ruling out COPY/LOAD utilities)
+5. Command line arguments to configure source files and destination tables.
 6. The files can be arbitrarily large/small, hence the solution must provide a way to configure batch size of inserts because inserting per line is expensive on the cores whereas extremely large batches may not fit in memory.  
 
 ###Basic usage help
@@ -81,10 +78,8 @@ python IntegrationTest.py
 
 ```
 Caveats:
-1. Inorder to gain a little bit of performance, a configurable batched bulk insert is used. If the file contains 15 records and the chunk specified is 10,
-then two chunks are written with 10 records each. On the first write, 10 records are written, on the seconds write the remaining 5 records are written with
+1. Inorder to gain a little bit of performance, a configurable batched bulk insert is used. If the file contains 15 records and the chunk specified is 10, then two chunks are written with 10 records each. On the first write, 10 records are written, on the seconds write the remaining 5 records are written with
 an additional 5 None records. (which can be filtered with data is not null where clause.)
-2. I decided this is a better approach than checking len(file) and reading exactly the number of lines as remaining because len()/size() operations are eager
-and will traverse the who file just to get the len, which is not scalable for extremely large files. Whereas, filtering by not null is a one time cleaning-up act
-on the database server. 
+2.Better approach than checking len(file) and reading exactly the number of lines as remaining because len()/size() operations are eager
+and will traverse the who file just to get the len, which is not scalable for extremely large files. Whereas, filtering by not null is a one time cleaning-up act on the database server. 
 
